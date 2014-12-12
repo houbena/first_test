@@ -9,7 +9,7 @@ Scenario: Enter a covered zipcode
   When I swipee right
    And I swipee right
    And I swipee right
-   Then I wait for 1 seconds
+   Then I wait for 3 seconds
   Then I see the "Get started screen"
   Then I wait for 1 seconds
   When I touch the "Start" button
