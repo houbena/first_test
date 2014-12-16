@@ -6,9 +6,9 @@ Feature:The User can enter a location
 Scenario: Enter a covered zipcode
  
 
- When I swipe right
-   And I swipe right
-   And I swipe right
+ When I swipee right
+   And I swipee right
+   And I swipee right
 Then I wait for 1 seconds
   Then I see the "Get started screen"
   Then I wait for 1 seconds
