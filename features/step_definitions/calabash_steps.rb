@@ -34,8 +34,8 @@ end
 Then (/^I touch the "(.*?)" button$/) do |select|
   case select
     when "Start"
-      touch("* {text CONTAINS 'GET STARTED'}")
-
+    #  touch("* {text CONTAINS 'GET STARTED'}")
+      touch("*   id:'btn_fragment_carousel'")
     when "Zipcode"
       touch("*   id:'tv_fragment_add_zip_click'")
 
