@@ -38,7 +38,9 @@ Then (/^I touch the "(.*?)" button$/) do |select|
       touch("*   id:'btn_fragment_carousel'")
     when "Zipcode"
       touch("*   id:'tv_fragment_add_zip_click'")
-
+when "Skip"
+touch("*   id:'tv_fragment_carousel_skip'")
+ 
     when"Go"
       touch("*   marked:'Go'")
 
