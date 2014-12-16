@@ -21,5 +21,5 @@ When I touch the "Skip" button
    And I enter "a covered zipcode"
   Then I touch the "Go" button
 When I touch the "Got it" button
-  Then I see the "New order screen"
+#  Then I see the "New order screen"
   Then I wait for 2 seconds
