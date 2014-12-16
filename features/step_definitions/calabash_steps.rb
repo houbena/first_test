@@ -6,7 +6,7 @@ Then(/^I see the "([^\"]*)"$/) do |displayed_label|
   case displayed_label
 
     when "Get started screen"
-      var_text = "* marked:'GET STARTED'"
+      var_text = "* marked:'GET STARTED' id:'btn_fragment_carousel'"
 
     when "Zipcode screen"
       var_text = "* marked:'Go'"
@@ -35,7 +35,7 @@ Then (/^I touch the "(.*?)" button$/) do |select|
   case select
     when "Start"
     #  touch("* {text CONTAINS 'GET STARTED'}")
-      touch("*   id:'btn_fragment_carousel'")
+      touch("*   marked:'GET STARTED' id:'btn_fragment_carousel'")
     when "Zipcode"
       touch("*   id:'tv_fragment_add_zip_click'")
 when "Skip"
