@@ -6,7 +6,7 @@ Feature:The User can enter a location
 Scenario: Enter a covered zipcode
  
 
-# When I swipe right
+ When I swipe right
  #  And I swipe right
   # And I swipe right
 #Then I wait for 1 seconds
