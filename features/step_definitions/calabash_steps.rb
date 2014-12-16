@@ -28,7 +28,7 @@ Then(/^I see the "([^\"]*)"$/) do |displayed_label|
       var_text = "* marked:'Your Order\nis Confirmed!'"
   end
 
-wait_for_elements_exist([var_text])
+wait_for_elements_exist([var_text], :timeout => 10)
 end
 
 
