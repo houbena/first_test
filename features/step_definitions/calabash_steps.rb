@@ -1,6 +1,7 @@
 require 'calabash-android/calabash_steps'
 When(/^I swipee right$/) do
-    perform_action('drag', 85, 25, 5, 5, 5)
+    perform_action('drag', 95, 25, 5, 5, 1)
+
 end
 Then(/^I see the "([^\"]*)"$/) do |displayed_label|
   case displayed_label
