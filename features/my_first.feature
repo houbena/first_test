@@ -7,14 +7,14 @@ Scenario: Enter a covered zipcode
  
 
  When I swipee right
- #  And I swipee right
-  # And I swipee right
+   And I swipee right
+   And I swipee right
 Then I wait for 1 seconds
-#  Then I see the "Get started screen"
-#  Then I wait for 1 seconds
+  Then I see the "Get started screen"
+  Then I wait for 1 seconds
 
-# When I touch the "Start" button
-When I touch the "Skip" button
+ When I touch the "Start" button
+#When I touch the "Skip" button
  
   Then I see the "Zipcode screen"
   Then I touch the "Zipcode" button
