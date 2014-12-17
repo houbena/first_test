@@ -48,7 +48,8 @@ touch("*   id:'tv_fragment_carousel_skip'")
     when "Email"
       touch("*   id:'et_fragment_no_service_email_address'")
     when "Keep me Posted"
-      touch("*   marked:'KEEP ME POSTED'")
+      touch("button  id:'btn_fragment_keep_me_posted' marked:'KEEP ME POSTED'")
+
     when "Full Name"
       touch("*   id:'et_fragment_add_contact_info_name'")
     when "Email Address"
