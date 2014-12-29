@@ -49,7 +49,8 @@ when"Got it"
     when "Email"
       touch("*   id:'et_fragment_no_service_email_address'")
     when "Keep me Posted"
-      touch("*  id:'btn_fragment_keep_me_posted' marked:'KEEP ME POSTED'")
+    tap_when_element_exists("*  id:'btn_fragment_keep_me_posted'", :timeout => 5)
+     
     when "Full Name"
       touch("*   id:'et_fragment_add_contact_info_name'")
     when "Email Address"
