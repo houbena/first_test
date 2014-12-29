@@ -4,7 +4,7 @@ Scenario: Enter uncovered zipcode
 
 
  #   Then I see the "Skip"
-    Then I wait for 1 seconds
+    Then I wait for 2 seconds
 When I touch the "Skip" button
     
     Then I see the "Zipcode screen"
