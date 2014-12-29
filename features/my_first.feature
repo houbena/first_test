@@ -2,14 +2,11 @@ Feature:The User can enter a location
 
 Scenario: Enter uncovered zipcode
 
-    When I swipee right
-    And I swipee right
-    And I swipee right
-Then I wait for 1 seconds
-    Then I see the "Get started screen"
-    Then I wait for 1 seconds
 
-    When I touch the "Start" button
+    Then I see the "Skip"
+    Then I wait for 1 seconds
+When I touch the "Skip" button
+    
     Then I see the "Zipcode screen"
     Then I touch the "Zipcode" button
     And I enter "an uncovered zipcode"
