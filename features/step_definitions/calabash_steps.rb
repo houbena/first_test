@@ -42,9 +42,9 @@ tap_when_element_exists("*  id:'tv_fragment_carousel_skip'", :timeout => 5)
     when "Zipcode"
 
 tap_when_element_exists("*  id:'tv_fragment_add_zip_click'", :timeout => 5)
-    when"Go"
+    when "Go"
       touch("*   marked:'Go'")
-when"Got it"
+when "Got it"
          
 tap_when_element_exists("*  id:'btn_dialog_price_list_ok'", :timeout => 5)
     when "Email"
