@@ -1,21 +1,21 @@
 require 'calabash-android/calabash_steps'
 When(/^I swipee right$/) do
-    perform_action('drag', 95, 25, 5, 5, 1)
-
+    perform_action('drag', 85, 25, 5, 5, 5)
 end
 Then(/^I see the "([^\"]*)"$/) do |displayed_label|
   case displayed_label
 
     when "Get started screen"
-      var_text = "* marked:'GET STARTED' id:'btn_fragment_carousel'"
-
+      var_text = "* marked:'GET STARTED'"
+    when "Skip"
+      var_text = "* marked:'Skip'"
     when "Zipcode screen"
       var_text = "* marked:'Go'"
 
     when "New order screen"
       var_text = "* id:'btn_fragment_new_order_get_cleaned_clothes'"
     when"Keep me Posted"
-      var_text = "* id:'btn_fragment_keep_me_posted'"
+      var_text = "* marked:'KEEP ME POSTED'"
     when "Contact info screen"
       var_text = "* id:'et_fragment_add_contact_info_name'"
     when "Address screen"
@@ -28,28 +28,28 @@ Then(/^I see the "([^\"]*)"$/) do |displayed_label|
       var_text = "* marked:'Your Order\nis Confirmed!'"
   end
 
-wait_for_elements_exist([var_text], :timeout => 10)
+wait_for_elements_exist( var_text , :timeout => 5)
 end
 
 
 Then (/^I touch the "(.*?)" button$/) do |select|
   case select
     when "Start"
-    #  touch("* {text CONTAINS 'GET STARTED'}")
-      touch("*   marked:'GET STARTED' id:'btn_fragment_carousel'")
-    when "Zipcode"
-      touch("*   id:'tv_fragment_add_zip_click'")
+      touch("* {text CONTAINS 'GET STARTED'}")
 when "Skip"
 touch("*   id:'tv_fragment_carousel_skip'")
- 
+    when "Zipcode"
+      touch("*   id:'tv_fragment_add_zip_click'")
+
     when"Go"
       touch("*   marked:'Go'")
+when"Got it"
+     touch("*   id:'btn_dialog_price_list_ok'")          
 
     when "Email"
       touch("*   id:'et_fragment_no_service_email_address'")
     when "Keep me Posted"
-      touch("*  id:'btn_fragment_keep_me_posted'")
-
+      touch("*   marked:'KEEP ME POSTED'")
     when "Full Name"
       touch("*   id:'et_fragment_add_contact_info_name'")
     when "Email Address"
