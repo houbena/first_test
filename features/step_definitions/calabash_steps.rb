@@ -8,7 +8,7 @@ Then(/^I see the "([^\"]*)"$/) do |displayed_label|
     when "Get started screen"
       var_text = "* marked:'GET STARTED'"
     when "Skip"
-      var_text = "* marked:'Skip'"
+      var_text = "textview  id:'tv_fragment_carousel_skip'"
     when "Zipcode screen"
       var_text = "* marked:'Go'"
 
