@@ -3,7 +3,7 @@ Feature:The User can enter a location
 Scenario: Enter uncovered zipcode
 
 
-    Then I see the "Skip"
+ #   Then I see the "Skip"
     Then I wait for 1 seconds
 When I touch the "Skip" button
     
