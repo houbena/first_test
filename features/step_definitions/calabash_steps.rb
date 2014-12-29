@@ -46,7 +46,7 @@ tap_when_element_exists("*  id:'tv_fragment_add_zip_click'", :timeout => 5)
       touch("*   marked:'Go'")
 when "Got it"
          
-tap_when_element_exists("*  id:'btn_dialog_price_list_ok'", :timeout => 5)
+tap_when_element_exists("*  id:'btn_dialog_price_list_ok'")
     when "Email"
       touch("*   id:'et_fragment_no_service_email_address'")
     when "Keep me Posted"
