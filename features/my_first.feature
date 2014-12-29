@@ -15,5 +15,6 @@ Scenario: Enter uncovered zipcode
    Then I wait for 2 seconds
     When I touch the "Email" button
     And I enter "an Email Address"
+    Then I wait for 2 seconds
     Then I touch the "Keep me Posted" button
     Then I see the "Zipcode screen"
