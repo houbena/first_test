@@ -37,15 +37,16 @@ Then (/^I touch the "(.*?)" button$/) do |select|
     when "Start"
       touch("* {text CONTAINS 'GET STARTED'}")
 when "Skip"
-touch("*   id:'tv_fragment_carousel_skip'")
+
+tap_when_element_exists("*  id:'tv_fragment_carousel_skip'", :timeout => 5)
     when "Zipcode"
       touch("*   id:'tv_fragment_add_zip_click'")
 
     when"Go"
       touch("*   marked:'Go'")
 when"Got it"
-     touch("*   id:'btn_dialog_price_list_ok'")          
-
+         
+tap_when_element_exists("*  id:'btn_dialog_price_list_ok'", :timeout => 5)
     when "Email"
       touch("*   id:'et_fragment_no_service_email_address'")
     when "Keep me Posted"
