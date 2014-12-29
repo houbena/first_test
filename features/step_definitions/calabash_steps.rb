@@ -15,7 +15,7 @@ Then(/^I see the "([^\"]*)"$/) do |displayed_label|
     when "New order screen"
       var_text = "* id:'btn_fragment_new_order_get_cleaned_clothes'"
     when"Keep me Posted"
-      var_text = "* marked:'KEEP ME POSTED'"
+      var_text = "* id:'btn_fragment_keep_me_posted'  marked:'KEEP ME POSTED'"
     when "Contact info screen"
       var_text = "* id:'et_fragment_add_contact_info_name'"
     when "Address screen"
@@ -49,7 +49,7 @@ when"Got it"
     when "Email"
       touch("*   id:'et_fragment_no_service_email_address'")
     when "Keep me Posted"
-      touch("*   marked:'KEEP ME POSTED'")
+      touch("*  id:'btn_fragment_keep_me_posted' marked:'KEEP ME POSTED'")
     when "Full Name"
       touch("*   id:'et_fragment_add_contact_info_name'")
     when "Email Address"
