@@ -40,8 +40,8 @@ when "Skip"
 
 tap_when_element_exists("*  id:'tv_fragment_carousel_skip'", :timeout => 5)
     when "Zipcode"
-      touch("*   id:'tv_fragment_add_zip_click'")
 
+tap_when_element_exists("*  id:'tv_fragment_add_zip_click'", :timeout => 5)
     when"Go"
       touch("*   marked:'Go'")
 when"Got it"
