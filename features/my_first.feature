@@ -1,3 +1,5 @@
+Feature:The User can enter a location
+
 Scenario: Enter uncovered zipcode
 
     When I swipee right
