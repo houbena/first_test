@@ -15,6 +15,6 @@ When I touch the "Skip" button
     When I touch the "Email" button
     And I enter "an Email Address"
  #   Then I see the "Keep me Posted"
-
+Then I wait for 5 seconds
     Then I touch the "Keep me Posted" button
     Then I see the "Zipcode screen"
