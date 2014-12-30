@@ -53,6 +53,7 @@ Then (/^I touch the "(.*?)" button$/) do |select|
       tap_when_element_exists("*  id:'tv_fragment_add_zip_click'", :timeout => 5)
     
     when "Go"
+    hide_soft_keyboard
       tap_when_element_exists("* marked:'Go'")
     
     when "Got it"
