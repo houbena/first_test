@@ -19,7 +19,7 @@ Then(/^I see the "([^\"]*)"$/) do |displayed_label|
     when "New order screen"
       var_text = "* id:'btn_fragment_new_order_get_cleaned_clothes'"
 
-    when"Keep me Posted"
+    when "Keep me Posted"
       var_text = "* id:'btn_fragment_keep_me_posted'  marked:'KEEP ME POSTED'"
 
     when "Contact info screen"
@@ -53,7 +53,7 @@ Then (/^I touch the "(.*?)" button$/) do |select|
       tap_when_element_exists("*  id:'tv_fragment_add_zip_click'", :timeout => 5)
     
     when "Go"
-      touch("*   marked:'Go'")
+      touch("* marked:'Go'")
     
     when "Got it"
        tap_when_element_exists("*  id:'btn_dialog_price_list_ok'")
