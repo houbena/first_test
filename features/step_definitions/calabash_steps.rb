@@ -63,6 +63,7 @@ Then (/^I touch the "(.*?)" button$/) do |select|
        tap_when_element_exists("*   id:'et_fragment_no_service_email_address'")
    
     when "Keep me Posted"
+        hide_soft_keyboard
        tap_when_element_exists("*  id:'btn_fragment_keep_me_posted'")
      
     when "Full Name"
