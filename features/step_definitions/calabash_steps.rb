@@ -53,7 +53,7 @@ Then (/^I touch the "(.*?)" button$/) do |select|
       tap_when_element_exists("*  id:'tv_fragment_add_zip_click'", :timeout => 5)
     
     when "Go"
-      touch("* marked:'Go'")
+      tap_when_element_exists("* marked:'Go'")
     
     when "Got it"
        tap_when_element_exists("*  id:'btn_dialog_price_list_ok'")
@@ -117,7 +117,7 @@ end
 Then(/^I enter "(.*?)"$/) do |text_input|
   case text_input
     when "an uncovered zipcode"
-      text_to_input = "0000"
+      text_to_input = '0000'
 
     when "a covered zipcode" #in Berlin
       text_to_input = '10117'
